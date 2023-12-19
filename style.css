@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#stockList #stockButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 100px auto;
+  width: 90%;
+}
+
+.heading {
+  margin: 50px auto;
+  width: 90%;
+  text-decoration: underline;
+  font-weight: 900;
+  font-size: 200%;
+  text-align: center;
+}
+
+#myChart {
+  width: 800px !important;
+  max-width: 850px !important;
+  display: block !important;
+  height: auto !important;
+}
+
+#stockList {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 70px auto;
+  gap: 20px;
+}
+
+.bottom-section {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 0px;
+  gap: 4%;
+}
+
+#stockChart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#stockTimeperiodBtn {
+  display: flex;
+  /* align-self: center; */
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+}
+
+.stockNameBookvalueProfit {
+  display: flex;
+  gap: 3%;
+  font-size: 23px;
+  padding: 11px 0;
+}
+
+.stockBtn {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1100px) {
+  #myChart {
+    width: 600px !important;
+    display: block !important;
+    height: auto !important;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .bottom-section {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 0px;
+    gap: 4%;
+  }
+
+  #myChart {
+    width: 500px !important;
+    display: block !important;
+    height: auto !important;
+  }
+
+  .heading {
+    margin: 50px auto;
+    width: 90%;
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: 150%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #myChart {
+    width: 400px !important;
+    display: block !important;
+    height: auto !important;
+  }
+  .stockNameBookvalueProfit {
+    display: flex;
+    gap: 3%;
+    font-size: 15px;
+    padding: 11px 0;
+  }
+  .btn {
+    padding: 6px;
+    font-size: 10px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #myChart {
+    width: 300px !important;
+    display: block !important;
+    height: auto !important;
+  }
+  .stockNameBookvalueProfit {
+    display: flex;
+    gap: 3%;
+    font-size: 15px;
+    padding: 11px 0;
+  }
+  .btn {
+    padding: 6px;
+    font-size: 10px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+  }
+  .stockDetail p {
+    font-size: 4px;
+  }
+}
