@@ -47,7 +47,18 @@ function graphPlot(data, name, timeperiod) {
       ],
     },
     options: {
-      //   intersect: true,
+      responsive: true,
+      title: {
+        display: true,
+        text: `Stock Profit Chart of ${name} during ${timeperiod}`,
+      },
+      tooltips: {
+        mode: "label",
+      },
+      hover: {
+        mode: "dataset",
+      },
+      
       responsive: true,
       scales: {
         yAxes: [
