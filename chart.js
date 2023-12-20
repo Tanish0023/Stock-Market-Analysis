@@ -35,7 +35,7 @@ function graphPlot(data, name, timeperiod) {
       labels: xValues,
       datasets: [
         {
-          label: `Stock Profit Chart of ${name} during ${timeperiod}`,
+          label: `Profit vs Time Period`,
           backgroundColor: "rgba(0,0,255,1.0)",
           borderColor: "rgba(0,0,255,0.1)",
           data: yValues,
@@ -58,7 +58,7 @@ function graphPlot(data, name, timeperiod) {
       hover: {
         mode: "dataset",
       },
-      
+
       responsive: true,
       scales: {
         yAxes: [
